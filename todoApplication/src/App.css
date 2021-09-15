@@ -1,0 +1,67 @@
+/* Prevent highlighting when double clicking list items */
+#orderedList {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */    
+  cursor: pointer;
+}
+
+.overall-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 400px 1fr 1fr;
+  grid-template-rows: 1fr auto 1fr;
+}
+
+.input-tasks-grid-container {
+  grid-column-start: 3;
+  margin-top: 45px;
+  text-align: center;
+}
+
+.tasks-grid-container {
+  grid-row-start: 2;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.tasks-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tip-text {
+  position: relative;
+  right: -2px;
+}
+
+.charlie {
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  height: 26px;
+  right: -4px;
+}
+
+.removeButton {
+  margin-left: 10px
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+ol {
+  margin-left: 40px;
+  margin-top: -6px;
+}
+
+::placeholder {
+  position: relative;
+  right: -5px;
+}
